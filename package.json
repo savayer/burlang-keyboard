@@ -1,14 +1,15 @@
 {
   "name": "burlang-keyboard",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "screen keyboard on buryat language based on simple-keyboard",
   "main": "./lib/index.js",
+  "homepage": "https://github.com/savayer/burlang-keyboard",
   "scripts": {
     "dev": "webpack serve --config webpack.config.js --mode development",
     "build": "webpack build --config webpack.config.js --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "savayer",
   "license": "MIT",
   "dependencies": {
     "simple-keyboard": "^3.4.3"
