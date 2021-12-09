@@ -3,12 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     entry: {
-      demo: './src/demo.js',
+      // demo: './src/demo.js',
       index: './src/index.js'
     },
     output: {
       filename: '[name].js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'lib'),
+      library: {
+        name: 'burlang-keyboard',
+        type: 'umd'
+      },
+
     },
     devServer: {
       static: path.join(__dirname, 'dist'),
@@ -35,11 +40,11 @@ const config = {
         }
       ]
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: 'src/index.html'
-      })
-    ]
+    // plugins: [
+    //   new HtmlWebpackPlugin({
+    //     template: 'src/index.html'
+    //   })
+    // ]
 }
 
 module.exports = config;

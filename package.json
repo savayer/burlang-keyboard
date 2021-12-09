@@ -2,14 +2,14 @@
   "name": "burlang-keyboard",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "dev": "webpack serve --config webpack.config.js --mode development",
     "build": "webpack build --config webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "simple-keyboard": "^3.4.3"
   },
